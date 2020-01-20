@@ -10,7 +10,7 @@ public class RotateLeft {
         //Display original array
         System.out.println("Original array");
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
         //Rotate the given array by n times toward left
         for (int i = 0; i < n; i++) {
@@ -23,6 +23,11 @@ public class RotateLeft {
             }
             //add first element at the end of array
             arr[j] = first;
+        }
+        System.out.println();
+        System.out.println("Array after rotation : ");
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }
