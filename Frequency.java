@@ -17,5 +17,10 @@ public class Frequency {
             if (fr[i] != visited)
                 fr[i] = count;
         }
+        System.out.println("Element Frequency :");
+        for (int i = 0; i < fr.length; i++) {
+            if (fr[i] != visited)
+                System.out.println(" " + arr[i] + " = " + fr[i]);
+        }
     }
 }
